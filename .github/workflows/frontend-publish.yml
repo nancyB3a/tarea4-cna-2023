@@ -28,5 +28,6 @@ jobs:
           context: ./chat-frontend
           file: ./chat-frontend/Dockerfile
           push: true
+          tag_semver: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
